@@ -1,17 +1,20 @@
-import { FunctionComponent, useEffect, useState } from "react";
-import Link from "next/link";
+import { useState, useEffect, FunctionComponent } from "react";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 const NavItem: FunctionComponent<{
-  activeItem: string;
-  setActiveItem: Function;
+  active: string;
+  setActive: Function;
   name: string;
   route: string;
-}> = ({ activeItem, name, setActiveItem, route }) => {
-  return activeItem !== name ? (
+}> = ({ active, setActive, name, route }) => {
+  return active !== name ? (
     <Link href={route}>
       <a>
-        <span onClick={() => setActiveItem(name)} className="hover:text-green">
+        <span
+          className="mx-2 cursor-pointer hover:border-b-4 hover:text-green"
+          onClick={() => setActive(name)}
+        >
           {name}
         </span>
       </a>
@@ -19,49 +22,41 @@ const NavItem: FunctionComponent<{
   ) : null;
 };
 
-function Navbar() {
-  const [activeItem, setActiveItem] = useState<string>("");
-
+const Navbar = () => {
   const { pathname } = useRouter();
 
+  const [active, setActive] = useState("");
+
+  //later
   useEffect(() => {
-    if (pathname === "/") {
-      setActiveItem("About");
-    } else if (pathname === "/projects") {
-      setActiveItem("Projects");
-    } else if (pathname === "/resume") {
-      setActiveItem("Resume");
-    }
-  }, []);
+    if (pathname === "/") setActive("About");
+    else if (pathname === "/projects") setActive("Projects");
+    else if (pathname === "/resume") setActive("Resume");
+  }, [pathname]);
 
   return (
-    <div className="flex justify-between px-5 py-5 my-3">
-      <span className="text-xl font-bold border-b-4 border-green text-green md:text-2xl">
-        {activeItem}
+    <div className="flex items-center justify-between px-5 py-3 my-3">
+      <span className="text-xl font-bold border-b-4 md:text-2xl border-green">
+        {active}
       </span>
-      <div className="flex space-x-10 text-lg ">
-        <NavItem
-          activeItem={activeItem}
-          setActiveItem={setActiveItem}
-          name="About"
-          route="/"
-        />
 
+      <div className="text-base font-normal md:text-xl">
+        <NavItem active={active} setActive={setActive} name="About" route="/" />
         <NavItem
-          activeItem={activeItem}
-          setActiveItem={setActiveItem}
-          name="Projects"
-          route="/projects"
-        />
-        <NavItem
-          activeItem={activeItem}
-          setActiveItem={setActiveItem}
+          active={active}
+          setActive={setActive}
           name="Resume"
           route="/resume"
+        />
+        <NavItem
+          active={active}
+          setActive={setActive}
+          name="Projects"
+          route="/projects"
         />
       </div>
     </div>
   );
-}
+};
 
 export default Navbar;

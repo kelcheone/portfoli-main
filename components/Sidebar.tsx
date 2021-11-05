@@ -5,12 +5,15 @@ import { FaDiscord, FaTelegramPlane } from "react-icons/fa";
 
 function Sidebar() {
   return (
-    <div>
-      <img
-        src="https://avatars.githubusercontent.com/u/80192475?v=4"
-        alt="Profile pic"
-        className="w-32 h-32 rounded-full"
-      />
+    <div className="">
+      <div className="flex items-center justify-center">
+        <img
+          src="https://avatars.githubusercontent.com/u/80192475?v=4"
+          alt="Profile pic"
+          className="w-32 h-32 rounded-full"
+        />
+      </div>
+
       <h3 className="my-4 text-3xl font-medium tracking-wider font-kaushan">
         <span className="text-green">Kevin </span>Kelche
       </h3>
