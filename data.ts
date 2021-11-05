@@ -11,7 +11,7 @@ export const services: IService[] = [
     Icon: RiComputerLine,
     title: "Frontend Development",
     about:
-      "I can build a beautiful and scalable SPA using <b> HTML</b>,<b>CSS</b>   and <b>React.js</b> ",
+      "I can build a beautiful and scalable SPA using <b>Tailwind</b>,<b> SCSS</b> <b>Next.js</b>   and <b>React.js</b> ",
   },
   {
     Icon: FaServer,
@@ -23,7 +23,7 @@ export const services: IService[] = [
     Icon: AiOutlineApi,
     title: "API Development",
     about:
-      "I can develop robust  REST API using <b>django-rest-api</b>  & <b>Node API</b> ",
+      "I can develop robust  REST API using <b>Node  GraphQL/ API</b>  & <b>Node REST API</b> ",
   },
   {
     Icon: MdDeveloperMode,

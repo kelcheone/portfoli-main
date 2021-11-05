@@ -5,7 +5,7 @@ import { FaDiscord, FaTelegramPlane } from "react-icons/fa";
 
 function Sidebar() {
   return (
-    <div className="">
+    <div className="shaddow-3xl">
       <div className="flex items-center justify-center">
         <img
           src="https://avatars.githubusercontent.com/u/80192475?v=4"
