@@ -11,7 +11,7 @@ const index = () => {
         Web Development
       </h5>
       <div
-        className="flex-grow p-4 mt-5 bg-gray-400 "
+        className="flex-grow p-4 mt-5 bg-gradient-to-t from-green-200 to-blue-200 "
         style={{ marginLeft: "-1.5rem", marginRight: "-1.5rem" }}
       >
         <h6 className="my-3 text-xl font-bold tracking-wide">
