@@ -1,9 +1,9 @@
+import { useTheme } from "next-themes";
+import Image from "next/image";
 import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 import { GoLocation } from "react-icons/go";
 import { GiTie } from "react-icons/gi";
 import { FaDiscord, FaTelegramPlane } from "react-icons/fa";
-
-import { useTheme } from "next-themes";
 
 function Sidebar() {
   const { setTheme, theme } = useTheme();
@@ -15,10 +15,14 @@ function Sidebar() {
   return (
     <div className="shaddow-3xl">
       <div className="flex items-center justify-center">
-        <img
+        <Image
           src="https://avatars.githubusercontent.com/u/80192475?v=4"
           alt="Profile pic"
           className="w-32 h-32 rounded-full"
+          height="128"
+          width="128"
+          layout="intrinsic"
+          quality="100"
         />
       </div>
 
