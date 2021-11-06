@@ -143,7 +143,7 @@ export const projects: IProject[] = [
     image_path: "/images/covid.jpg",
     deployed_url: "https://covid-19-tracker-by-sumit.web.app/",
     github_url: "https://github.com/Dey-Sumit/covid-19-tracker",
-    category: ["react"],
+    category: ["React"],
     key_techs: ["React", "Chart.js", "Material UI"],
   },
   {
@@ -151,7 +151,7 @@ export const projects: IProject[] = [
     image_path: "/images/algoVisual.png",
     deployed_url: "https://visual-algorithm.web.app/",
     github_url: "https://github.com/Dey-Sumit/algorithm-visualizer",
-    category: ["react"],
+    category: ["React"],
     description:
       "An web app which shows how an algorithm (path finding or sorting) works with cool animation",
     key_techs: ["React", "firebase", "Framer Motion"],
@@ -162,7 +162,7 @@ export const projects: IProject[] = [
     image_path: "/images/dev.jpg",
     deployed_url: "https://dev-talks.herokuapp.com/",
     github_url: "https://github.com/Dey-Sumit/Dev-talks",
-    category: ["node", "mongo", "react"],
+    category: ["node", "mongo", "React"],
     description:
       "Social Media app for developers who can share project,create posts,etc...",
     key_techs: [
@@ -181,7 +181,7 @@ export const projects: IProject[] = [
     image_path: "/images/chatapp.jpg",
     deployed_url: "https://sumit-chat.netlify.app/",
     github_url: "https://github.com/Dey-Sumit/chat-app-socket.io-react-node",
-    category: ["node", "react"],
+    category: ["node", "React"],
     description:
       "Basic Realtime Chat App where one can create a room can talk to each other",
     key_techs: ["React", "Node", "Express", "Socket", "Bootstrap"],
@@ -192,7 +192,7 @@ export const projects: IProject[] = [
     image_path: "/images/tweetme.jpg",
     deployed_url: "http://sumaxtweetme.pythonanywhere.com/",
     github_url: "https://github.com/Dey-Sumit/tweetme",
-    category: ["django", "react"],
+    category: ["django", "React"],
     description:
       "First Django Project :) | Typical Social Media App where one can post,like ,comment etc",
     key_techs: ["React", "Django", "Django REST API"],
@@ -230,7 +230,7 @@ export const projects: IProject[] = [
     image_path: "/images/football.png",
     deployed_url: "https://o-my-goal.web.app/",
     github_url: "https://github.com/Dey-Sumit/football-app",
-    category: ["react"],
+    category: ["React"],
     description:
       "o my goal replica where an user can keep an eye on his favorite club.This app will keep providing \n all the statistics of that club.all the fans can also chat ",
     key_techs: ["React", "Redux", "Firebase Auth", "API", "Sass", "Bootstrap"],

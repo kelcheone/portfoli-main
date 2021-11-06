@@ -1,10 +1,34 @@
+import { useState } from "react";
 import ProjectCard from "../components/ProjectCard";
-import { projects } from "../data";
+import ProjectsNavBar from "../components/ProjectsNavBar";
+import { projects as projectsData } from "../data";
+import { Category } from "../type";
 
 function Projects() {
+  const [projects, setProjects] = useState(projectsData);
+  const [active, setActive] = useState("all");
+
+  const handlerFilterCategory = (category: Category | "all") => {
+    if (category === "all") {
+      setProjects(projectsData);
+      setActive(category);
+      return;
+    }
+    const newArray = projectsData.filter((project) =>
+      project.category.includes(category)
+    );
+    setProjects(newArray);
+    setActive(category);
+  };
+
   return (
     <div className="px-5 py-2">
-      <nav>NarBar</nav>
+      <nav>
+        <ProjectsNavBar
+          handlerFilterCategory={handlerFilterCategory}
+          active={active}
+        />
+      </nav>
 
       <div
         className="relative grid grid-cols-12 gap-4 my-3 overflow-y-scroll"
