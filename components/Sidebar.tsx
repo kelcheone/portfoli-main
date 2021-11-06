@@ -3,7 +3,15 @@ import { GoLocation } from "react-icons/go";
 import { GiTie } from "react-icons/gi";
 import { FaDiscord, FaTelegramPlane } from "react-icons/fa";
 
+import { useTheme } from "next-themes";
+
 function Sidebar() {
+  const { setTheme, theme } = useTheme();
+
+  const changeTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
+
   return (
     <div className="shaddow-3xl">
       <div className="flex items-center justify-center">
@@ -17,12 +25,12 @@ function Sidebar() {
       <h3 className="my-4 text-3xl font-medium tracking-wider font-kaushan">
         <span className="text-green">Kevin </span>Kelche
       </h3>
-      <p className="px-2 py-1 my-3 bg-gray-200 rounded-full">
+      <p className="px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200">
         Software Developer
       </p>
       <p>
         <a
-          className="flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full"
+          className="flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200"
           href=""
           download="name"
         >
@@ -66,7 +74,7 @@ function Sidebar() {
       {/* address info */}
 
       <div
-        className="py-5 my-5 bg-gray-200"
+        className="py-5 my-5 bg-gray-200 dark:bg-dark-200"
         style={{ marginLeft: "-1rem", marginRight: "-1rem" }}
       >
         <div className="flex items-center justify-center space-x-2">
@@ -83,7 +91,10 @@ function Sidebar() {
       >
         Email Me
       </button>
-      <button className="w-9/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-green to-blue-400">
+      <button
+        className="w-9/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-green to-blue-400"
+        onClick={changeTheme}
+      >
         Toggle Theme
       </button>
     </div>

@@ -33,7 +33,7 @@ export const services: IService[] = [
     Icon: AiOutlineApi,
     title: "API Development",
     about:
-      "I can develop robust  REST API using <b>Node  GraphQL/ API</b>  & <b>Node REST API</b> ",
+      "I can develop robust  REST API using <b>Node  GraphQL- API</b>  & <b>Node REST API</b> ",
   },
   {
     Icon: MdDeveloperMode,
