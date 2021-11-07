@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import ProjectCard from "../components/ProjectCard";
 import ProjectsNavBar from "../components/ProjectsNavBar";
@@ -35,7 +36,7 @@ function Projects() {
         style={{ height: "65vh" }}
       >
         {projects.map((project) => (
-          <div className="col-span-12 p-2 bg-gray-200 rounded-lg sm:col-span-6 lg:col-span-4 dark:bg-dark-200">
+          <div className="col-span-12 p-2 bg-gray-200 rounded-lg sm:col-span-6 lg:col-span-4 dark:bg-dark-200" key={project.name}>
             <ProjectCard project={project} />
           </div>
         ))}

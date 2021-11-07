@@ -1,3 +1,4 @@
+/*eslint  react/jsx-key: 0 */
 import { FunctionComponent, useState } from "react";
 import { AiFillGithub, AiFillProject } from "react-icons/ai";
 import { MdClose } from "react-icons/md";
@@ -75,7 +76,7 @@ const ProjectCard: FunctionComponent<{ project: IProject }> = ({
             <div>
               {key_techs.map((tech) => (
                 <span
-                  key={name}
+                  key={deployed_url}
                   className="px-2 py-1 m-2 mt-1 bg-gray-200 rounded dark:bg-dark-200"
                 >
                   {tech}
