@@ -2,11 +2,10 @@ import "../styles/globals.css";
 import "tailwindcss/tailwind.css";
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
-import { AnimatePresence } from "framer-motion";
 
 import { ThemeProvider } from "next-themes";
 
-function MyApp({ Component, pageProps, router }) {
+function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider attribute="class">
       <div className="grid grid-cols-12 gap-6 px-5 lg:px-48 my-14 sm:px-20 md:px-32">
@@ -15,9 +14,7 @@ function MyApp({ Component, pageProps, router }) {
         </div>
         <div className="col-span-12 overflow-hidden bg-white lg:col-span-9 rounded-2xl dark:bg-dark-500 shadow-custom-light dark:shadow-custom-dark">
           <Navbar />
-          <AnimatePresence exitBeforeEnter>
-            <Component {...pageProps} key={router.route} />
-          </AnimatePresence>
+          <Component {...pageProps} />
         </div>
       </div>
     </ThemeProvider>
