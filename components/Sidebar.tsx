@@ -4,12 +4,21 @@ import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 import { GoLocation } from "react-icons/go";
 import { GiTie } from "react-icons/gi";
 import { FaDiscord, FaTelegramPlane } from "react-icons/fa";
+import { useState } from "react";
 
 function Sidebar() {
   const { setTheme, theme } = useTheme();
+  const [themeName, current] = useState("Change Theme");
 
   const changeTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
+  };
+  const setCurrentTheme = () => {
+    if (theme === "light") {
+      current("Go Light");
+    } else if (theme === "dark") {
+      current("Go dark");
+    }
   };
 
   return (
@@ -105,9 +114,12 @@ function Sidebar() {
       </button>
       <button
         className="w-9/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-green to-blue-400"
-        onClick={changeTheme}
+        onClick={() => {
+          changeTheme();
+          setCurrentTheme();
+        }}
       >
-        Change Theme
+        {themeName}
       </button>
     </div>
   );
