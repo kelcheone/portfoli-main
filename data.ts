@@ -27,13 +27,13 @@ export const services: IService[] = [
     Icon: FaServer,
     title: "Backend  Development",
     about:
-      "I design and build scalable serves and databses using <b>Node, Express, Postgress</b> & <b>MongoDB</b>",
+      "I design and build scalable servers and databses using <b>Node, Express, Postgress</b> & <b>MongoDB</b>",
   },
   {
     Icon: AiOutlineApi,
     title: "API Development",
     about:
-      "I  dising and develop robust  REST and GraphQl APIs using <b>NodeJs</b> ",
+      "I  designing and develop robust  REST and GraphQl APIs using <b>NodeJs</b> ",
   },
   {
     Icon: FaEthereum,

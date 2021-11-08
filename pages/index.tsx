@@ -17,9 +17,10 @@ const index = () => {
         <title>Kelche | Portfolio </title>
       </Head>
       <h4 className="my-3 font-medium">
-        I am currently pursuing B.Science Degreein Software Development from KCA
-        University. I have 2+ years of experience in Web Development and
+        I am currently pursuing B.Science Degree in Software Development from
+        KCA University. I have 2+ years of experience in Web Development and
         Blockchain app Development developing dApps and finding vulnerabilities
+        in smart contracts.
       </h4>
       <div
         className="flex-grow p-4 mt-5 bg-gradient-to-r from-green-200 to-blue-200 dark:from-dark-100 dark:to-dark-500"
