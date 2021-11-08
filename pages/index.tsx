@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { fadingUp, routeAnimation, stagger } from "../animations";
 import ServiceCard from "../components/ServiceCard";
 import { services } from "../data";
+import Head from "next/head";
 
 const index = () => {
   return (
@@ -12,18 +13,19 @@ const index = () => {
       animate="animate"
       exit="exit"
     >
-      
-      <h5 className="my-3 font-medium">
-        I am currently pursuing B.Tech Degree(Final Year) in Computer Science
-        Engineering from Academy of Technology. I have 3+ years of experience in
-        Web Development and I have a Youtube Channel where I teach Full Stack
-        Web Development
-      </h5>
+      <Head>
+        <title>Kelche | Portfolio </title>
+      </Head>
+      <h4 className="my-3 font-medium">
+        I am currently pursuing B.Science Degreein Software Development from KCA
+        University. I have 2+ years of experience in Web Development and
+        Blockchain app Development developing dApps and finding vulnerabilities
+      </h4>
       <div
         className="flex-grow p-4 mt-5 bg-gradient-to-r from-green-200 to-blue-200 dark:from-dark-100 dark:to-dark-500"
         style={{ marginLeft: "-1.5rem", marginRight: "-1.5rem" }}
       >
-        <h4 className="my-3 text-xl font-bold tracking-wide">
+        <h4 className="my-3 text-xl font-bold tracking-wide text-black dark:text-white">
           <i> What's in store for</i> <b>YOU!</b>{" "}
         </h4>
         <motion.div

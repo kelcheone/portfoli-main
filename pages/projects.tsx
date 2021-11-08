@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Head from "next/head";
 import { useState } from "react";
 import { fadingUp, routeAnimation, stagger } from "../animations";
 import ProjectCard from "../components/ProjectCard";
@@ -32,6 +33,9 @@ function Projects() {
       animate="animate"
       exit="exit"
     >
+      <Head>
+        <title>Kelche | Projects </title>
+      </Head>
       <nav>
         <ProjectsNavBar
           handlerFilterCategory={handlerFilterCategory}

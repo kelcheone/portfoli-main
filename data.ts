@@ -1,6 +1,6 @@
 import { RiComputerLine } from "react-icons/ri";
 import { FaServer, FaEthereum } from "react-icons/fa";
-import { AiOutlineAntDesign, AiOutlineApi } from "react-icons/ai";
+import { AiFillBug, AiOutlineAntDesign, AiOutlineApi } from "react-icons/ai";
 import { DiJavascript1 } from "react-icons/di";
 import { MdDeveloperMode } from "react-icons/md";
 import { IProject, IService, ISkill } from "./type";
@@ -21,13 +21,13 @@ export const services: IService[] = [
     Icon: RiComputerLine,
     title: "Frontend Development",
     about:
-      "I can build a beautiful and scalable SPA using <b>Tailwind</b>,<b> SCSS</b> <b>Next.js</b>   and <b>React.js</b> ",
+      "I can build a beautiful and scalable SPA using <b>Tailwind</b>,<b> SCSS</b>, <b>Next.js</b>   and <b>React.js</b> ",
   },
   {
     Icon: FaServer,
     title: "Backend  Development",
     about:
-      "handle database, server, api using <b>Express </b> & other popular frameworks",
+      "I can handle databases, server, api using <b>Express </b> & other popular frameworks",
   },
   {
     Icon: AiOutlineApi,
@@ -39,7 +39,7 @@ export const services: IService[] = [
     Icon: FaEthereum,
     title: "dApp Developer",
     about:
-      "I build secure and efficent smart contracts and decntralized Ui using <b>Solidity</b>  <b>Ethereum, Polygon, Opti,ism and Arbitrum</b> ",
+      "I can build secure and efficent smart contracts and decntralized UI using <b>Solidity</b>  <b>Ethereum, Polygon, Optimism and Arbitrum</b> ",
   },
   {
     Icon: AiOutlineAntDesign,
@@ -48,10 +48,10 @@ export const services: IService[] = [
       "stunning user interface designer using <b>Figma</b>  and  <b>Framer</b> ",
   },
   {
-    Icon: RiComputerLine,
-    title: "Whatever",
+    Icon: AiFillBug,
+    title: "Bounty Hunter",
     about:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis minima autem!",
+      "Finding those vulnerabilities that can cost you billions of dollars in you Smart contracts in case they are exploited",
   },
 ];
 

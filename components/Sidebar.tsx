@@ -44,7 +44,12 @@ function Sidebar() {
       </p>
       {/* //Social icon */}
       <div className="flex justify-around w-9/12 mx-auto my-5 text-green md:w-full">
-        <a href="https://github.com/kelcheone" target="_blank" rel="noreferrer">
+        <a
+          href="https://github.com/kelcheone"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Github"
+        >
           <BsGithub className="py-1 cursor-pointer w-7 h-7" />
         </a>
 
@@ -52,6 +57,7 @@ function Sidebar() {
           href="https://discord.com/users/Kelche#3557"
           target="_blank"
           rel="noreferrer"
+          aria-label="Discord"
         >
           <FaDiscord className="py-1 cursor-pointer w-7 h-7" />
         </a>
@@ -60,6 +66,7 @@ function Sidebar() {
           href="https://twitter.com/kelcheone"
           target="_blank"
           rel="noreferrer"
+          aria-label="Twitter"
         >
           <BsTwitter className="py-1 cursor-pointer w-7 h-7" />
         </a>
@@ -70,6 +77,7 @@ function Sidebar() {
           href="https://www.linkedin.com/in/kevin-cheruiyot-76459a214/"
           target="_blank"
           rel="noreferrer"
+          aria-label="LinkedIn"
         >
           <BsLinkedin className="py-1 cursor-pointer w-7 h-7" />
         </a>
@@ -86,7 +94,7 @@ function Sidebar() {
           <span>Nairobi, Kenya </span>
         </div>
         <p className="my-2"> kelcheone@gmail.com</p>
-        <p className="my-2">+25410015474</p>
+        <p className="my-2">+254110015474</p>
       </div>
       {/* Email Me */}
       <button
@@ -99,7 +107,7 @@ function Sidebar() {
         className="w-9/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-green to-blue-400"
         onClick={changeTheme}
       >
-        Toggle Theme
+        Change Theme
       </button>
     </div>
   );

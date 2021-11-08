@@ -5,13 +5,20 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <title>Kelche</title>
           <link rel="icon" href="/kelche.png" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
             href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
             rel="stylesheet"
+          />
+          <meta
+            name="description"
+            content="Blockchain developer looking for job"
+          />
+          <meta
+            name="keywords"
+            content="dApp developer, Blockchain developer, freelance developer, Solidity developer, Solidity engineer, solana developer"
           />
         </Head>
         <body className="bg-gradient-to-r from-green to-blue-400 dark:from-dark-100 dark:to-dark-700 dark:text-white">

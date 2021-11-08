@@ -2,6 +2,7 @@ import Bar from "../components/Bar";
 import { languages, tools } from "../data";
 import { motion } from "framer-motion";
 import { fadingUp, routeAnimation } from "../animations";
+import Head from "next/head";
 
 function resume() {
   return (
@@ -12,6 +13,9 @@ function resume() {
       animate="animate"
       exit="exit"
     >
+      <Head>
+        <title>Kelche | Resume </title>
+      </Head>
       {/* education and exprience */}
       <div className="grid gap-6 md:grid-cols-2 ">
         <motion.div variants={fadingUp} initial="initial" animate="animate">
