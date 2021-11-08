@@ -12,10 +12,7 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
             rel="stylesheet"
           />
-          <meta
-            name="description"
-            content="Blockchain developer looking for job"
-          />
+          <meta name="description" content="Blockchain developer" />
           <meta
             name="keywords"
             content="dApp developer, Blockchain developer, freelance developer, Solidity developer, Solidity engineer, NFT developer, solana developer"
