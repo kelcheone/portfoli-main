@@ -1,10 +1,13 @@
-import Document, { Html, Head, Main, NextScript } from "next/document";
+import Document, { Html, Main, NextScript } from "next/document";
+import Head from "next/head";
 
 class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
         <Head>
+          <title>Kelche</title>
+          <link rel="icon" href="/kelche.png" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link

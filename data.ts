@@ -1,5 +1,5 @@
 import { RiComputerLine } from "react-icons/ri";
-import { FaServer } from "react-icons/fa";
+import { FaServer, FaEthereum } from "react-icons/fa";
 import { AiOutlineAntDesign, AiOutlineApi } from "react-icons/ai";
 import { DiJavascript1 } from "react-icons/di";
 import { MdDeveloperMode } from "react-icons/md";
@@ -36,9 +36,10 @@ export const services: IService[] = [
       "I can develop robust  REST API using <b>Node  GraphQL- API</b>  & <b>Node REST API</b> ",
   },
   {
-    Icon: MdDeveloperMode,
-    title: "Competitive Coder",
-    about: "a daily problem solver in <b>HackerRank</b>  and <b>Leet Code</b> ",
+    Icon: FaEthereum,
+    title: "dApp Developer",
+    about:
+      "I build secure and efficent smart contracts and decntralized Ui using <b>Solidity</b>  <b>Ethereum, Polygon, Opti,ism and Arbitrum</b> ",
   },
   {
     Icon: AiOutlineAntDesign,

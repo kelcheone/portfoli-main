@@ -12,6 +12,7 @@ const index = () => {
       animate="animate"
       exit="exit"
     >
+      
       <h5 className="my-3 font-medium">
         I am currently pursuing B.Tech Degree(Final Year) in Computer Science
         Engineering from Academy of Technology. I have 3+ years of experience in
