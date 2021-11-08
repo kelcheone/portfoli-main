@@ -1,9 +1,17 @@
+import { motion } from "framer-motion";
+import { fadingUp, routeAnimation, stagger } from "../animations";
 import ServiceCard from "../components/ServiceCard";
 import { services } from "../data";
 
 const index = () => {
   return (
-    <div className="flex flex-col flex-grow px-6 pt-1 rounded-lg">
+    <motion.div
+      className="flex flex-col flex-grow px-6 pt-1 rounded-lg"
+      variants={routeAnimation}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+    >
       <h5 className="my-3 font-medium">
         I am currently pursuing B.Tech Degree(Final Year) in Computer Science
         Engineering from Academy of Technology. I have 3+ years of experience in
@@ -14,18 +22,27 @@ const index = () => {
         className="flex-grow p-4 mt-5 bg-gradient-to-r from-green-200 to-blue-200 dark:from-dark-100 dark:to-dark-500"
         style={{ marginLeft: "-1.5rem", marginRight: "-1.5rem" }}
       >
-        <h6 className="my-3 text-xl font-bold tracking-wide">
+        <h4 className="my-3 text-xl font-bold tracking-wide">
           <i> What's in store for</i> <b>YOU!</b>{" "}
-        </h6>
-        <div className="grid gap-6 lg:grid-cols-2">
+        </h4>
+        <motion.div
+          className="grid gap-6 lg:grid-cols-2"
+          variants={stagger}
+          initial="initial"
+          animate="animate"
+        >
           {services.map((service) => (
-            <div className="bg-gray-200 rounded-lg dark:bg-dark-200 lg:col-span-1">
-              <ServiceCard service={service} key={service.title} />
-            </div>
+            <motion.div
+              variants={fadingUp}
+              className="bg-gray-200 rounded-lg dark:bg-dark-200 lg:col-span-1"
+              key={service.title}
+            >
+              <ServiceCard service={service} />
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

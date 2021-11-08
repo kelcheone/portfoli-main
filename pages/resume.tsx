@@ -1,12 +1,20 @@
 import Bar from "../components/Bar";
 import { languages, tools } from "../data";
+import { motion } from "framer-motion";
+import { fadingUp, routeAnimation } from "../animations";
 
 function resume() {
   return (
-    <div className="px-6 py-2">
+    <motion.div
+      className="px-6 py-2"
+      variants={routeAnimation}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+    >
       {/* education and exprience */}
       <div className="grid gap-6 md:grid-cols-2 ">
-        <div>
+        <motion.div variants={fadingUp} initial="initial" animate="animate">
           <h5 className="my-3 text-2xl font-bold">Education</h5>
           <div>
             <h5 className="my-2 text-xl font-bold">Software Development</h5>
@@ -16,9 +24,9 @@ function resume() {
               Development from KCA University.
             </p>
           </div>
-        </div>
+        </motion.div>
 
-        <div>
+        <motion.div variants={fadingUp} initial="initial" animate="animate">
           <h5 className="my-3 text-2xl font-bold">Experience</h5>
           <div>
             <h5 className="my-2 text-xl font-bold">Open Source contributor</h5>
@@ -29,7 +37,7 @@ function resume() {
               Dao, gitcoin Dao, etc. etc.
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
       {/* languages & tools */}
       <div className="grid gap-6 md:grid-cols-2 ">
@@ -50,7 +58,7 @@ function resume() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
