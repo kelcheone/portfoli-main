@@ -130,7 +130,7 @@ export const tools: ISkill[] = [
   },
   {
     name: "Chainlink",
-    level: "40%",
+    level: "60%",
     Icon: BsCircleFill,
   },
 ];
