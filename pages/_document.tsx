@@ -18,7 +18,7 @@ class MyDocument extends Document {
           />
           <meta
             name="keywords"
-            content="dApp developer, Blockchain developer, freelance developer, Solidity developer, Solidity engineer, solana developer"
+            content="dApp developer, Blockchain developer, freelance developer, Solidity developer, Solidity engineer, NFT developer, solana developer"
           />
         </Head>
         <body className="bg-gradient-to-r from-green to-blue-400 dark:from-dark-100 dark:to-dark-700 dark:text-white">

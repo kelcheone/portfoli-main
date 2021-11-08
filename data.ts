@@ -21,37 +21,37 @@ export const services: IService[] = [
     Icon: RiComputerLine,
     title: "Frontend Development",
     about:
-      "I can build a beautiful and scalable SPA using <b>Tailwind</b>,<b> SCSS</b>, <b>Next.js</b>   and <b>React.js</b> ",
+      "I  build a beautiful and scalable webapps using  and decentralized frontends <b>Tailwind</b>,<b> SCSS</b>, <b>Next.js</b>   and <b>React.js</b> ",
   },
   {
     Icon: FaServer,
     title: "Backend  Development",
     about:
-      "I can handle databases, server, api using <b>Express </b> & other popular frameworks",
+      "I design and build scalable serves and databses using <b>Node, Express, Postgress</b> & <b>MongoDB</b>",
   },
   {
     Icon: AiOutlineApi,
     title: "API Development",
     about:
-      "I can develop robust  REST API using <b>Node  GraphQL- API</b>  & <b>Node REST API</b> ",
+      "I  dising and develop robust  REST and GraphQl APIs using <b>NodeJs</b> ",
   },
   {
     Icon: FaEthereum,
-    title: "dApp Developer",
+    title: "dApp(DEFI & NFTs) Development",
     about:
-      "I can build secure and efficent smart contracts and decntralized UI using <b>Solidity</b>  <b>Ethereum, Polygon, Optimism and Arbitrum</b> ",
+      "I  build secure and efficent smart contracts using <b>Solidity</b> and deploy them on <b>Ethereum, Polygon, Optimism and Arbitrum</b> plus any EVM compatible blockchain.",
   },
   {
     Icon: AiOutlineAntDesign,
-    title: "UI/UX designer",
+    title: "UI/UX designing",
     about:
-      "stunning user interface designer using <b>Figma</b>  and  <b>Framer</b> ",
+      "I do stunning user interface designer using <b>Figma</b>  and  <b>Framer</b> ",
   },
   {
     Icon: AiFillBug,
-    title: "Bounty Hunter",
+    title: "Smart Contract Auditing",
     about:
-      "Finding those vulnerabilities that can cost you billions of dollars in you Smart contracts in case they are exploited",
+      "I do independent Auditing for your smart contracts to find vulnerabilities that can cost your users milions if exploited",
   },
 ];
 
@@ -131,6 +131,11 @@ export const tools: ISkill[] = [
   },
   {
     name: "Chainlink",
+    level: "40%",
+    Icon: BsCircleFill,
+  },
+  {
+    name: "Tenderly",
     level: "40%",
     Icon: BsCircleFill,
   },
