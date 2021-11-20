@@ -5,13 +5,9 @@ import Navbar from "../components/Navbar";
 import { AnimatePresence } from "framer-motion";
 import Script from "next/script";
 
-
 import { ThemeProvider } from "next-themes";
 
-
-
 function MyApp({ Component, pageProps, router }) {
-    console.log(process.env.GOOGLE_API)
   return (
     <ThemeProvider attribute="class">
       <Script
@@ -24,7 +20,6 @@ function MyApp({ Component, pageProps, router }) {
   gtag('js', new Date());
 
   gtag('config', ${process.env.GOOGLE_ID});`}
-
       </Script>
 
       <div className="grid grid-cols-12 gap-6 px-5 lg:px-48 my-14 sm:px-20 md:px-32">
