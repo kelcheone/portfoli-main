@@ -36,6 +36,7 @@ function Projects() {
       <Head>
         <title>Kelche | Projects </title>
       </Head>
+      <h1 className="text-5xl text-red-400"> Update in progress</h1>
       <nav>
         <ProjectsNavBar
           handlerFilterCategory={handlerFilterCategory}

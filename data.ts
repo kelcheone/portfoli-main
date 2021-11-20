@@ -13,15 +13,22 @@ import {
   SiNextdotjs,
   SiNodedotjs,
   SiMongodb,
+  SiTypescript,
 } from "react-icons/si";
 import { BsCircleFill } from "react-icons/bs";
 
 export const services: IService[] = [
   {
-    Icon: RiComputerLine,
-    title: "Frontend Development",
+    Icon: FaEthereum,
+    title: "dApp(DEFI & NFTs) Development",
     about:
-      "I  build a beautiful and scalable webapps using  and decentralized frontends <b>Tailwind</b>,<b> SCSS</b>, <b>Next.js</b>   and <b>React.js</b> ",
+      "I build secure and gass efficient smart contracts primarily using <b> Solidity </b> on any EVM compatible chain.",
+  },
+  {
+    Icon: AiOutlineApi,
+    title: "API and Subgraph Development",
+    about:
+      "I  design and develop robust REST APIs and graphQl API Subgraphs using <b>The Graph</b>",
   },
   {
     Icon: FaServer,
@@ -30,28 +37,22 @@ export const services: IService[] = [
       "I design and build scalable servers and databses using <b>Node, Express, Postgress</b> & <b>MongoDB</b>",
   },
   {
-    Icon: AiOutlineApi,
-    title: "API Development",
+    Icon: AiFillBug,
+    title: "Smart Contract Auditing",
     about:
-      "I  designing and develop robust  REST and GraphQl APIs using <b>NodeJs</b> ",
-  },
-  {
-    Icon: FaEthereum,
-    title: "dApp(DEFI & NFTs) Development",
-    about:
-      "I  build secure and efficent smart contracts using <b>Solidity</b> and deploy them on <b>Ethereum, Polygon, Optimism and Arbitrum</b> plus any EVM compatible blockchain.",
+      "I do independent smart contract auditing and bounty hunter and do postmortems",
   },
   {
     Icon: AiOutlineAntDesign,
     title: "UI/UX designing",
     about:
-      "I do stunning user interface designer using <b>Figma</b>  and  <b>Framer</b> ",
+      "I do stunning user interface design using <b>Figma</b>  and  <b>Framer</b> ",
   },
   {
-    Icon: AiFillBug,
-    title: "Smart Contract Auditing",
+    Icon: RiComputerLine,
+    title: "Frontend Development",
     about:
-      "I do independent Auditing for your smart contracts to find vulnerabilities that can cost your users milions if exploited",
+      "I build webapps and decentralized frontends <b>Tailwind CSS</b>,<b> SCSS</b>, <b>Next.js</b>   and <b>Svelte.js</b> ",
   },
 ];
 
@@ -70,6 +71,11 @@ export const languages: ISkill[] = [
     name: "Python",
     level: "70%",
     Icon: SiPython,
+  },
+  {
+    name: "Typescript",
+    level: "50%",
+    Icon: SiTypescript,
   },
   {
     name: "React",
@@ -96,6 +102,7 @@ export const languages: ISkill[] = [
     level: "50%",
     Icon: SiElectron,
   },
+
   {
     name: "MongoDB",
     level: "50%",
@@ -129,13 +136,15 @@ export const tools: ISkill[] = [
     level: "60%",
     Icon: BsCircleFill,
   },
+
   {
-    name: "Chainlink",
-    level: "40%",
+    name: "Dapp-tools",
+    level: "50%",
     Icon: BsCircleFill,
   },
+
   {
-    name: "Tenderly",
+    name: "Chainlink",
     level: "40%",
     Icon: BsCircleFill,
   },

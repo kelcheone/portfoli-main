@@ -17,10 +17,12 @@ const index = () => {
         <title>Kelche | Portfolio </title>
       </Head>
       <h4 className="my-3 font-medium">
-        I am currently pursuing B.Science Degree in Software Development from
-        KCA University. I have 2+ years of experience in Web Development and
-        Blockchain app Development developing dApps and finding vulnerabilities
-        in smart contracts.
+        I am a a blockchain enthusiast and a software developer. I have 2 years
+        in general programming and a year in Solidity development. I am
+        currently working on Smart contract security and a research project on
+        MEV (Maximum Extracted Value), IoT and Applications of AI in
+        Blockchains. Also a part-time B.Science in Software Development at KCA
+        University.
       </h4>
       <div
         className="flex-grow p-4 mt-5 bg-gradient-to-r from-green-200 to-blue-200 dark:from-dark-100 dark:to-dark-500"
