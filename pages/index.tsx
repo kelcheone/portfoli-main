@@ -20,7 +20,7 @@ const index = () => {
         I am a a blockchain enthusiast and a software developer. I have 2 years
         in general programming and a year in Solidity development. I am
         currently working on Smart contract security and a research project on
-        MEV (Maximum Extracted Value), IoT and Applications of AI in
+        MEV (Maximal Extractable Value), IoT and Applications of AI in
         Blockchains. Also a part-time B.Science in Software Development at KCA
         University.
       </h4>
