@@ -25,7 +25,7 @@ function Sidebar() {
     <div className="shaddow-3xl">
       <div className="flex items-center justify-center">
         <Image
-          src="https://avatars.githubusercontent.com/u/80192475?v=4"
+          src="https://i.imgur.com/sQCElwX.jpeg"
           alt="Profile pic"
           className="w-32 h-32 rounded-full"
           height="128"

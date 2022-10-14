@@ -1,7 +1,8 @@
 import { RiComputerLine } from "react-icons/ri";
 import { FaServer, FaEthereum } from "react-icons/fa";
 import { AiFillBug, AiOutlineAntDesign, AiOutlineApi } from "react-icons/ai";
-import { DiJavascript1 } from "react-icons/di";
+import { DiJava, DiJavascript1 } from "react-icons/di";
+import {GrGolang, GrMysql} from "react-icons/gr"
 import { MdDeveloperMode } from "react-icons/md";
 import { IProject, IService, ISkill } from "./type";
 import {
@@ -14,10 +15,24 @@ import {
   SiNodedotjs,
   SiMongodb,
   SiTypescript,
+  SiPostgresql,
+  SiGoland,
 } from "react-icons/si";
 import { BsCircleFill } from "react-icons/bs";
 
 export const services: IService[] = [
+  {
+    Icon: FaServer,
+    title: "Backend  Development",
+    about:
+      "I design and build scalable servers and databses using <b>Node, Express, Postgress, FastAPI</b> & <b>MongoDB</b> I also user various api streaming services such as Kafka and gRPC",
+  },
+  {
+    Icon: RiComputerLine,
+    title: "Frontend Development",
+    about:
+      "I build webapps and decentralized frontends <b>Tailwind CSS</b>,<b> SCSS</b>, <b>Next.js</b>   and <b>Svelte.js</b> ",
+  },
   {
     Icon: FaEthereum,
     title: "dApp(DEFI & NFTs) Development",
@@ -31,12 +46,6 @@ export const services: IService[] = [
       "I  design and develop robust REST APIs and graphQl API Subgraphs using <b>The Graph</b>",
   },
   {
-    Icon: FaServer,
-    title: "Backend  Development",
-    about:
-      "I design and build scalable servers and databses using <b>Node, Express, Postgress</b> & <b>MongoDB</b>",
-  },
-  {
     Icon: AiFillBug,
     title: "Smart Contract Auditing",
     about:
@@ -47,12 +56,6 @@ export const services: IService[] = [
     title: "UI/UX designing",
     about:
       "I do stunning user interface design using <b>Figma</b>  and  <b>Framer</b> ",
-  },
-  {
-    Icon: RiComputerLine,
-    title: "Frontend Development",
-    about:
-      "I build webapps and decentralized frontends <b>Tailwind CSS</b>,<b> SCSS</b>, <b>Next.js</b>   and <b>Svelte.js</b> ",
   },
 ];
 
@@ -73,11 +76,6 @@ export const languages: ISkill[] = [
     Icon: SiPython,
   },
   {
-    name: "Typescript",
-    level: "50%",
-    Icon: SiTypescript,
-  },
-  {
     name: "React",
     level: "60%",
     Icon: SiReact,
@@ -93,41 +91,50 @@ export const languages: ISkill[] = [
     Icon: SiNodedotjs,
   },
   {
-    name: "GraphQL",
+    name: "Java",
     level: "60%",
-    Icon: SiGraphql,
+    Icon: DiJava,
   },
   {
-    name: "Electron",
-    level: "50%",
-    Icon: SiElectron,
+    name: "Postgres",
+    level: "60%",
+    Icon: SiPostgresql,
   },
-
   {
-    name: "MongoDB",
+    name: "Typescript",
     level: "50%",
-    Icon: SiMongodb,
+    Icon: SiTypescript,
+  },
+  {
+    name: "Go",
+    level: "50%",
+    Icon: SiGoland,
+  }, 
+  {
+    name: "MySQL",
+    level: "50%",
+    Icon: GrMysql,
   },
 ];
 
 export const tools: ISkill[] = [
   {
-    name: "Truffle",
+    name: "Docker",
     level: "80%",
     Icon: BsCircleFill,
   },
   {
-    name: "Hardhat",
+    name: "GraphQL",
     level: "70%",
     Icon: BsCircleFill,
   },
   {
-    name: "Web3js",
+    name: "Kafka",
     level: "60%",
     Icon: BsCircleFill,
   },
   {
-    name: "Ethersjs",
+    name: "gRPC",
     level: "60%",
     Icon: BsCircleFill,
   },
@@ -138,7 +145,7 @@ export const tools: ISkill[] = [
   },
 
   {
-    name: "Dapp-tools",
+    name: "Hardhat",
     level: "50%",
     Icon: BsCircleFill,
   },

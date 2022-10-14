@@ -22,7 +22,7 @@ function resume() {
           <h5 className="my-3 text-2xl font-bold">Education</h5>
           <div>
             <h5 className="my-2 text-xl font-bold">Software Development</h5>
-            <p className="font-semibold"> KCA University (2019- 2023)</p>
+            <p className="font-semibold"> KCA University (2020- 2024)</p>
             <p className="my-3">
               I am currently persuing Bachalor of Science in Software
               Development from KCA University.
@@ -33,8 +33,8 @@ function resume() {
         <motion.div variants={fadingUp} initial="initial" animate="animate">
           <h5 className="my-3 text-2xl font-bold">Experience</h5>
           <div>
-            <h5 className="my-2 text-xl font-bold">Open Source contributor</h5>
-            <p className="font-semibold"> GitCoin (Aug 2020- present)</p>
+            <h5 className="my-2 text-xl font-bold">Full-stack Developer</h5>
+            <p className="font-semibold"> Upwork (Oct 2020- present)</p>
             <p className="my-3">
               I have worked on various projects as a contributor, bug bounty
               hunter and hackathon participant with protocols like the badger
